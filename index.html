@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS INTWEB</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="maior-menor.js"></script>
+    <script src="vogal.js"></script>
+    <script src="limites.js"></script>
+    <script src="ordem.js"></script>
+    <script src="positivo_negativo.js"></script>
+    <script src="par_impar.js"></script>
+</head>
+
+<body>
+
+    <h1>Escolha uma função:</h1>
+    <div id="options">
+        <button id=b1 onclick="chamarFuncao('maior_menor')">Maior_Menor</button>
+        <button id=b2 onclick="chamarFuncao('vogal')">Vogal</button>
+        <button id=b3 onclick="chamarFuncao('limites')">Limites</button>
+        <button id=b4 onclick="chamarFuncao('ordem')">Ordem</button>
+        <button id=b5 onclick="chamarFuncao('positivo_negativo')">Positivo_Negativo</button>
+        <button id=b6 onclick="chamarFuncao('par_impar')">Par_Impar</button>
+    </div>
+
+    <div id="resultado">
+        <p>Resultado:
+        </p>
+    </div>
+
+    <script>
+        function chamarFuncao(funcao) {
+
+            var resultadoElement = document.getElementById('resultado');
+            resultadoElement.innerHTML = '';
+
+            switch (funcao) {
+                case 'maior_menor':
+                    var resultado = MAIOR_MENOR();
+                    resultadoElement.textContent = resultado
+                    break;
+                case 'vogal':
+                    var resultado = VOGAL();
+                    resultadoElement.textContent = resultado
+                    break;
+                case 'limites':
+                    var resultado = LIMITES();
+                    resultadoElement.textContent = resultado
+                    break;
+                case 'ordem':
+                    var resultado = ORDEM();
+                    resultadoElement.textContent = resultado
+                    break;
+                case 'positivo_negativo':
+                    var resultado = POSITIVO_NEGATIVO();
+                    resultadoElement.textContent = resultado
+                    break;
+                case 'par_impar':
+                    var resultado = PAR_IMPAR();
+                    resultadoElement.textContent = resultado
+                    break;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

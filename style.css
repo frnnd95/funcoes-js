@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    font-size: 100%;
+}
+h1  {   
+    font-family: 'Bruno Ace', cursive;
+    font-size: 40px;
+    color: white;
+    text-shadow: -2px -2px 0 #00ffff, 2px 2px 0 #ff00ff;
+    padding: 20px;
+    text-align: center;
+  }
+
+#options {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 6px;
+    flex-wrap: wrap;
+    font-family: 'Inconsolata', monospace;
+    font-size: 24px;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    color: white;
+    text-shadow: -1px -1px 0 #00ffff, 1px 1px 0 #ff00ff;
+}
+#b1 {
+    background-color: #F8B58D;
+}
+#b2 {
+    background-color: #FFEC9E;
+}
+#b3 {
+    background-color: #CFE8B0;
+}
+#b4 {
+    background-color: #B9DDD8;
+}
+#b5 {
+    background-color: #C8AEED;
+}
+#b6 {
+    background-color: #E6B2C8;
+}
+#resultado {
+    display: flex;
+    width: 50%;
+    margin: 20px 24%;
+    padding: 12px;
+    background: black;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    color: white;
+    text-shadow: -1px -1px 0 #00ffff, 1px 1px 0 #ff00ff;
+}
